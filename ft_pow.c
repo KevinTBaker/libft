@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbaker <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/20 17:06:12 by kbaker            #+#    #+#             */
-/*   Updated: 2019/01/29 15:07:32 by kbaker           ###   ########.fr       */
+/*   Created: 2019/01/16 18:14:12 by kbaker            #+#    #+#             */
+/*   Updated: 2019/01/17 19:24:51 by kbaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putnbr(int n)
+int ft_pow(int x, unsigned int y)
 {
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		ft_putnbr(-n);
-	}
-	else if (n > 9)
-	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
-	}
+	int temp;
+
+	if (y == 0)
+		return (1);
+	temp = ft_pow(x, y / 2);
+	if (y % 2 == 0)
+		return (temp * temp);
 	else
-		ft_putchar(n + '0');
+		return (x * temp * temp);
 }
