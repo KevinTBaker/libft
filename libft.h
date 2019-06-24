@@ -6,7 +6,7 @@
 /*   By: kbaker <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/27 18:11:35 by kbaker            #+#    #+#             */
-/*   Updated: 2019/06/11 15:05:34 by kbaker           ###   ########.fr       */
+/*   Updated: 2019/06/23 18:08:51 by kbaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ char				*ft_strstr(char *big, char *little);
 char				*ft_strnstr(char *big, char *little, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+char				*ft_strrev(char *str);
 int					ft_atoi(char *str);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -83,6 +84,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+char				*ft_uitoa_base(size_t value, int base);
 int					ft_pow(int x, unsigned int y);
 
 #endif
