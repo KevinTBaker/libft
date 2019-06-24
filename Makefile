@@ -6,7 +6,7 @@
 #    By: kbaker <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/26 22:10:44 by kbaker            #+#    #+#              #
-#    Updated: 2019/02/05 20:27:43 by kbaker           ###   ########.fr        #
+#    Updated: 2019/06/23 18:11:37 by kbaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRCS =  ft_lstnew.c	ft_putchar.c ft_strchr.c ft_strjoin.c ft_strnew.c ft_toupper
 		ft_isprint.c ft_memmove.c ft_putstr_fd.c ft_striter.c ft_strncpy.c ft_strtrim.c \
 		ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_islower.c \
 		ft_isupper.c ft_swap.c ft_memset.c ft_strcat.c ft_striteri.c ft_strnequ.c ft_itoa.c \
-		ft_tolower.c ft_itoa_base.c  ft_unsigned_putnbr.c ft_pow.c \
+		ft_tolower.c ft_itoa_base.c  ft_unsigned_putnbr.c ft_pow.c  ft_uitoa_base.c  ft_strrev.c \
 
 OBJS = $(SRCS:.c=.o) 
 
